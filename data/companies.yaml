@@ -1,0 +1,175 @@
+# 每日研究的公司清单（固定资料）
+# 审核说明：标了「待核实」的字段请重点看。改完后这些资料会被直接填进提示词 01_research.md。
+# 字段：
+#   id                 内部代号（文件名、覆盖文件里用）
+#   group              innovation / epicenter（只做标记，暂不使用）
+#   cn_name / en_name  中文全称 / 英文名
+#   tickers            所有上市代码；同一家公司多地上市只搜一次
+#   business           主营
+#   key_new_business   重点新业务（填进提示词【请回答】2）
+#   competitors        竞争对手（填进【请回答】3，"包括但不限于"）
+#   confusable         容易混淆的公司（填进【背景】注意）
+#   media              优先中文媒体
+#   filings            公司公告来源
+#   website            官网（中文新闻稿）
+#   shares_outstanding 总股本（回购占比用）——首次运行时查好填入，附日期
+
+defaults:
+  media_mainland: [财新, 财联社, 证券时报, 21世纪经济报道, 每日经济新闻, 36氪, 新浪财经]
+  media_hk: [信报, 香港经济日报]
+
+companies:
+
+  - id: catl
+    group: innovation
+    cn_name: 宁德时代新能源科技股份有限公司
+    en_name: Contemporary Amperex Technology Co., Limited (CATL)
+    tickers: [300750.SZ, 3750.HK]          # 关注清单只列了 A 股，H 股 2025 年已上市
+    business: 动力电池、储能电池系统及电池材料回收
+    key_new_business: [钠离子电池, 换电业务（巧克力换电）, 固态电池, 海外工厂（匈牙利、西班牙、印尼）]
+    competitors: [比亚迪（弗迪电池）, LG新能源, 中创新航, 亿纬锂能]
+    confusable: []
+    media: [media_mainland, media_hk]
+    filings: [深交所公告, 港交所披露易]
+    website: catl.com
+    shares_outstanding: null
+
+  - id: xiaomi
+    group: innovation
+    cn_name: 小米集团
+    en_name: Xiaomi Corporation
+    tickers: [1810.HK]
+    business: 智能手机、IoT与生活消费产品、互联网服务、智能电动汽车
+    key_new_business: [小米汽车（交付量、新车型、海外）, 自研芯片（玄戒）, AI大模型, 高端化]
+    competitors: [华为（含鸿蒙智行）, 苹果, 特斯拉, 比亚迪]
+    confusable: []
+    media: [media_mainland, media_hk]
+    filings: [港交所披露易]
+    website: mi.com
+    shares_outstanding: null
+
+  - id: innovent
+    group: innovation
+    cn_name: 信达生物制药
+    en_name: Innovent Biologics, Inc.
+    tickers: [1801.HK]
+    business: 创新药研发与商业化（肿瘤、代谢、自免等），核心产品包括信迪利单抗、玛仕度肽
+    key_new_business: [玛仕度肽（GLP-1/GCG）, IBI363（PD-1/IL-2α-bias）及海外授权, ADC管线, 海外临床]
+    competitors: [恒瑞医药, 百济神州, 康方生物, 礼来/诺和诺德（GLP-1）]
+    confusable: []
+    media: [media_mainland, media_hk]
+    filings: [港交所披露易]
+    website: innoventbio.com
+    shares_outstanding: null
+
+  - id: wuxi_apptec
+    group: innovation
+    cn_name: 无锡药明康德新药开发股份有限公司
+    en_name: WuXi AppTec Co., Ltd.
+    tickers: [2359.HK, 603259.SS]          # A+H，关注清单只列 H 股
+    business: 医药研发及生产外包（CRDMO），以小分子和TIDES（寡核苷酸、多肽）为主
+    key_new_business: [TIDES业务, 海外产能（美国、新加坡）, 美国《生物安全法案》进展, 资产出售与回购]
+    competitors: [Lonza, 凯莱英, 康龙化成, Bachem]
+    confusable: [药明生物（2269.HK）, 药明合联（2268.HK）, 药明巨诺]
+    media: [media_mainland, media_hk]
+    filings: [港交所披露易, 上交所公告]
+    website: wuxiapptec.com.cn
+    shares_outstanding: null
+
+  - id: wuxi_xdc
+    group: innovation
+    cn_name: 药明合联生物技术有限公司
+    en_name: WuXi XDC Cayman Inc.
+    tickers: [2268.HK]
+    business: ADC等生物偶联药物的CRDMO（研发、生产外包）
+    key_new_business: [新加坡基地, 东曜药业收购整合, 新签项目数与PPQ项目]
+    competitors: [Lonza, 皓元医药, 凯莱英, 三星生物制剂（待核实是否直接竞争）]
+    confusable: [药明康德, 药明生物]
+    media: [media_mainland, media_hk]
+    filings: [港交所披露易]
+    website: wuxixdc.com
+    shares_outstanding: null
+
+  - id: akeso
+    group: innovation
+    cn_name: 康方生物科技（开曼）有限公司
+    en_name: Akeso, Inc.
+    tickers: [9926.HK]
+    business: 创新药（双抗为主），核心产品依沃西单抗（PD-1/VEGF）、卡度尼利单抗（PD-1/CTLA-4）
+    key_new_business: [依沃西海外III期及FDA申报（合作方Summit Therapeutics）, 新适应症获批, 医保谈判]
+    competitors: [默沙东（帕博利珠单抗）, 三生制药/辉瑞（PD-1/VEGF）, BioNTech/BMS（PD-L1/VEGF）, 信达生物]
+    confusable: []
+    media: [media_mainland, media_hk]
+    filings: [港交所披露易]
+    website: akesobio.com
+    shares_outstanding: null
+
+  - id: innolight
+    group: innovation
+    cn_name: 中际旭创股份有限公司
+    en_name: Zhongji Innolight Co., Ltd.
+    tickers: [300308.SZ, 3308.HK]          # 2026-07-30 H 股上市；两个代码合并研究
+    business: 数据中心高速光模块（800G、1.6T）
+    key_new_business: [1.6T光模块放量, 硅光, CPO（共封装光学）, 海外产能（泰国）]
+    competitors: [新易盛, Coherent, 光迅科技, Lumentum]
+    confusable: []
+    media: [media_mainland, media_hk]
+    filings: [深交所公告, 港交所披露易]
+    website: innolight.com
+    shares_outstanding: null
+
+  - id: amec
+    group: epicenter
+    cn_name: 中微半导体设备（上海）股份有限公司（中微公司）
+    en_name: Advanced Micro-Fabrication Equipment Inc. China (AMEC)
+    tickers: [688012.SS]
+    business: 半导体刻蚀设备（CCP/ICP）、MOCVD设备、薄膜沉积设备
+    key_new_business: [薄膜沉积设备（LPCVD/ALD/EPI）, 量检测设备, 先进制程刻蚀新品]
+    competitors: [北方华创, Lam Research, 东京电子, 拓荆科技]
+    confusable: [中微半导（中微半导体（深圳）股份有限公司，688380.SS，MCU芯片公司）]
+    media: [media_mainland]
+    filings: [上交所公告]
+    website: amec-inc.com
+    shares_outstanding: null
+
+  - id: dajin
+    group: epicenter
+    cn_name: 大金重工股份有限公司
+    en_name: Dajin Heavy Industry Co., Ltd.
+    tickers: [002487.SZ, 1081.HK]          # 2026-06-05 H 股上市
+    business: 风电塔筒、海上风电单桩等基础装备，欧洲海上风电单桩出口为重点
+    key_new_business: [欧洲海上风电单桩订单, 自有运输船队与码头, 漂浮式基础]
+    competitors: [Sif Holding, EEW, 天顺风能, 海力风电]
+    confusable: [大金工业（Daikin，日本空调）]
+    media: [media_mainland, media_hk]
+    filings: [深交所公告, 港交所披露易]
+    website: 待核实
+    shares_outstanding: null
+
+  - id: insilico
+    group: epicenter
+    cn_name: 英矽智能
+    en_name: InSilico Medicine Cayman TopCo
+    tickers: [3696.HK]                     # 2025-12-30 上市
+    business: 生成式AI药物发现平台（Pharma.AI）及自研管线授权、软件订阅
+    key_new_business: [rentosertib（ISM001-055，TNIK抑制剂，特发性肺纤维化）, 管线对外授权, 软件订阅]
+    competitors: [晶泰科技（2228.HK）, Recursion, Isomorphic Labs]
+    confusable: []
+    media: [media_mainland, media_hk]
+    filings: [港交所披露易]
+    website: insilico.com
+    shares_outstanding: null
+
+  - id: hesai
+    group: epicenter
+    cn_name: 禾赛科技
+    en_name: Hesai Group
+    tickers: [2525.HK, HSAI]               # 港股 + 纳斯达克
+    business: 激光雷达（车载ADAS、自动驾驶、机器人）
+    key_new_business: [机器人/割草机激光雷达, 海外车企定点, 新一代芯片化产品]
+    competitors: [速腾聚创（2498.HK）, 华为, 图达通（Seyond）]
+    confusable: []
+    media: [media_mainland, media_hk]
+    filings: [港交所披露易, 美国SEC]
+    website: hesaitech.com
+    shares_outstanding: null

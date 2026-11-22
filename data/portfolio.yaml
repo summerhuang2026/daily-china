@@ -1,0 +1,91 @@
+# 整个投资组合（用于 02_impact.md 评估"对其他股票的影响"）
+# 每只一句话：做什么 + 所在产业链位置。themes 用于判断传导路径（同主题情绪、供应链上下游）。
+# 标了「待核实」的请重点看。权重暂不使用。
+
+portfolio:
+  # —— 半导体：晶圆代工、存储、设计 ——
+  - {name: Taiwan Semiconductor Manufacturing, cn: 台积电, ticker: 2330.TW, desc: 全球最大晶圆代工，先进制程与CoWoS先进封装, themes: [AI芯片, 晶圆代工, 先进封装]}
+  - {name: Samsung Electronics, cn: 三星电子, ticker: 005930.KS, desc: 存储芯片（DRAM/HBM/NAND）、晶圆代工、手机, themes: [存储, HBM, 手机]}
+  - {name: SK hynix, cn: SK海力士, ticker: 000660.KS, desc: DRAM与HBM龙头，NAND, themes: [存储, HBM, AI芯片]}
+  - {name: Micron Technology, cn: 美光, ticker: MU, desc: DRAM、HBM、NAND, themes: [存储, HBM]}
+  - {name: Kioxia Holdings, cn: 铠侠, ticker: 285A.T, desc: NAND闪存, themes: [存储]}
+  - {name: Nvidia, cn: 英伟达, ticker: NVDA, desc: AI GPU与数据中心平台, themes: [AI芯片, 数据中心]}
+  - {name: Intel, cn: 英特尔, ticker: INTC, desc: CPU与晶圆代工, themes: [AI芯片, 晶圆代工]}
+  - {name: Marvell Technology, cn: 迈威尔, ticker: MRVL, desc: 定制AI芯片（ASIC）、光通信DSP与数据中心互联芯片, themes: [AI芯片, 光通信]}
+  - {name: MediaTek, cn: 联发科, ticker: 2454.TW, desc: 手机SoC，AI ASIC, themes: [手机, AI芯片]}
+
+  # —— 半导体设备与材料 ——
+  - {name: ASML Holding, cn: 阿斯麦, ticker: ASML, desc: 光刻机（EUV垄断）, themes: [半导体设备]}
+  - {name: Lam Research, cn: 泛林, ticker: LRCX, desc: 刻蚀与沉积设备，与中微公司直接竞争, themes: [半导体设备, 刻蚀]}
+  - {name: KLA Corp, cn: 科磊, ticker: KLAC, desc: 量测与检测设备, themes: [半导体设备]}
+  - {name: Kokusai Electric, cn: 国际电气, ticker: 6525.T, desc: 批量式薄膜沉积设备, themes: [半导体设备]}
+  - {name: Advantest, cn: 爱德万测试, ticker: 6857.T, desc: 半导体测试机（AI GPU/HBM测试）, themes: [半导体测试, AI芯片]}
+  - {name: Aixtron, cn: 爱思强, ticker: AIXA.DE, desc: MOCVD设备（化合物半导体、光芯片），与中微MOCVD竞争, themes: [半导体设备, 光通信]}
+  - {name: JX Advanced Metals, cn: JX金属, ticker: 5016.T, desc: 溅射靶材、磷化铟衬底（光芯片材料）, themes: [半导体材料, 光通信]}
+  - {name: Advanced Micro-Fabrication Equipment, cn: 中微公司, ticker: 688012.SS, desc: 刻蚀、MOCVD、薄膜设备, themes: [半导体设备, 刻蚀, 国产替代]}
+
+  # —— 封测、测试、载板、PCB ——
+  - {name: ASE Technology Holding, cn: 日月光投控, ticker: 3711.TW, desc: 封装测试龙头，先进封装, themes: [先进封装]}
+  - {name: Powertech Technology, cn: 力成, ticker: 6239.TW, desc: 存储封测, themes: [存储, 先进封装]}
+  - {name: King Yuan Electronics, cn: 京元电子, ticker: 2449.TW, desc: 芯片测试代工（AI GPU测试）, themes: [半导体测试, AI芯片]}
+  - {name: Chroma ATE, cn: 致茂电子, ticker: 2360.TW, desc: 测试与量测设备（电源、SoC测试）, themes: [半导体测试, 电源]}
+  - {name: Elite Material, cn: 台光电, ticker: 2383.TW, desc: 高速覆铜板（AI服务器、交换机PCB材料）, themes: [PCB, AI服务器]}
+  - {name: Gold Circuit Electronics, cn: 金像电, ticker: 2368.TW, desc: AI服务器与交换机PCB, themes: [PCB, AI服务器]}
+  - {name: Nan Ya Printed Circuit Board, cn: 南电, ticker: 8046.TW, desc: ABF载板, themes: [载板, AI芯片]}
+  - {name: Samsung Electro-Mechanics, cn: 三星电机, ticker: 009150.KS, desc: MLCC、封装载板、摄像头模组, themes: [被动元件, 载板, 手机]}
+  - {name: LG Innotek, cn: LG伊诺特, ticker: 011070.KS, desc: 摄像头模组（苹果）、载板, themes: [手机, 载板]}
+  - {name: Innodisk, cn: 宜鼎, ticker: 5289.TW, desc: 工控存储与边缘AI模块, themes: [存储, 边缘AI]}
+
+  # —— AI服务器、光通信、电源散热 ——
+  - {name: Quanta Computer, cn: 广达, ticker: 2382.TW, desc: AI服务器代工, themes: [AI服务器]}
+  - {name: Wiwynn, cn: 纬颖, ticker: 6669.TW, desc: 云厂商定制服务器, themes: [AI服务器]}
+  - {name: Delta Electronics, cn: 台达电, ticker: 2308.TW, desc: 服务器电源、液冷散热, themes: [电源, 散热, 数据中心]}
+  - {name: Fabrinet, cn: 飞宝, ticker: FN, desc: 光模块与光器件代工（英伟达供应链）, themes: [光通信]}
+  - {name: Lumentum Holdings, cn: 鲁门特姆, ticker: LITE, desc: 光芯片（EML激光器）与光模块，中际旭创上游/竞争对手, themes: [光通信]}
+  - {name: Zhongji Innolight（3308.HK）, cn: 中际旭创H, ticker: 3308.HK, desc: 高速光模块, themes: [光通信, AI服务器]}
+  - {name: Zhongji Innolight（300308.SZ）, cn: 中际旭创A, ticker: 300308.SZ, desc: 高速光模块, themes: [光通信, AI服务器]}
+  - {name: nVent Electric, cn: nVent, ticker: NVT, desc: 电气机柜、数据中心液冷, themes: [散热, 数据中心]}
+  - {name: Comfort Systems USA, cn: Comfort Systems, ticker: FIX, desc: 美国机电安装（数据中心建设）, themes: [数据中心建设]}
+  - {name: CECO Environmental Corp., cn: CECO环境, ticker: CECO, desc: 工业空气与水处理设备（含数据中心、电力）, themes: [工业设备]}
+  - {name: HD Hyundai Electric, cn: HD现代电气, ticker: 267260.KS, desc: 变压器与电力设备, themes: [电网, 数据中心]}
+
+  # —— 互联网、消费电子、汽车 ——
+  - {name: Xiaomi Corp, cn: 小米集团, ticker: 1810.HK, desc: 手机、IoT、互联网、电动车, themes: [手机, 电动车, 中国消费]}
+  - {name: Naver, cn: Naver, ticker: 035420.KS, desc: 韩国搜索与互联网平台、AI, themes: [互联网, AI应用]}
+  - {name: Hyundai Motor, cn: 现代汽车, ticker: 005380.KS, desc: 整车, themes: [汽车, 电动车]}
+  - {name: Hotai Motor Co.,Ltd., cn: 和泰车, ticker: 2207.TW, desc: 丰田在台总代理, themes: [汽车, 台湾消费]}
+  - {name: Hesai Group, cn: 禾赛科技, ticker: 2525.HK, desc: 激光雷达, themes: [电动车, 机器人, 自动驾驶]}
+  - {name: Contemporary Amperex Technology, cn: 宁德时代, ticker: 300750.SZ, desc: 动力与储能电池, themes: [电动车, 储能]}
+
+  # —— 医药 ——
+  - {name: INNOVENT BIO, cn: 信达生物, ticker: 1801.HK, desc: 创新药, themes: [中国创新药, GLP-1, 肿瘤]}
+  - {name: Akeso, Inc., cn: 康方生物, ticker: 9926.HK, desc: 双抗创新药（PD-1/VEGF）, themes: [中国创新药, 肿瘤]}
+  - {name: BeOne Medicines AG, cn: 百济神州, ticker: ONC, desc: 创新药（泽布替尼、肿瘤）, themes: [中国创新药, 肿瘤]}
+  - {name: WuXi AppTec Co., Ltd., cn: 药明康德, ticker: 2359.HK, desc: 医药CRDMO, themes: [医药外包, 中国创新药]}
+  - {name: WuXi XDC Cayman Inc., cn: 药明合联, ticker: 2268.HK, desc: ADC CRDMO, themes: [医药外包, ADC]}
+  - {name: InSilico Medicine Cayman TopCo, cn: 英矽智能, ticker: 3696.HK, desc: AI药物发现, themes: [中国创新药, AI应用]}
+  - {name: Bachem Holding AG, cn: Bachem, ticker: BANB.SW, desc: 多肽CDMO（GLP-1原料），药明康德TIDES竞争对手, themes: [医药外包, GLP-1]}
+  - {name: Argenx, cn: Argenx, ticker: ARGX, desc: 自免创新药（FcRn）, themes: [海外创新药]}
+  - {name: Genmab A/S, cn: Genmab, ticker: GMAB, desc: 抗体与ADC创新药, themes: [海外创新药, ADC]}
+  - {name: CLASSYS Inc., cn: CLASSYS, ticker: 214150.KQ, desc: 医美设备（超声提拉）, themes: [医美]}
+  - {name: APR Co., Ltd., cn: APR, ticker: 278470.KS, desc: 韩国美容仪与化妆品（Medicube）, themes: [美容消费]}
+
+  # —— 工业、能源、航空、建筑 ——
+  - {name: Dajin Heavy, cn: 大金重工, ticker: 1081.HK, desc: 海上风电单桩与塔筒, themes: [风电, 欧洲能源]}
+  - {name: Rolls-Royce Holdings, cn: 罗尔斯·罗伊斯, ticker: RR.L, desc: 航空发动机、电力系统、小型核反应堆, themes: [航空, 数据中心电力]}
+  - {name: Howmet Aerospace Inc., cn: 豪梅特, ticker: HWM, desc: 航空发动机零部件, themes: [航空]}
+  - {name: EVA Airways Corp., cn: 长荣航空, ticker: 2618.TW, desc: 台湾航空公司, themes: [航空, 出行]}
+  - {name: ACS Actividades de Construccion, cn: ACS集团, ticker: ACS.MC, desc: 西班牙建筑集团（含数据中心建设）, themes: [数据中心建设, 基建]}
+  - {name: Samsung E&A, cn: 三星E&A, ticker: 028050.KS, desc: 工程总包（化工、半导体厂房）, themes: [工程建设]}
+  - {name: Samsung C&T Corporation, cn: 三星物产, ticker: 028260.KS, desc: 三星集团控股、建筑、贸易, themes: [控股, 工程建设]}
+  - {name: SK Inc, cn: SK株式会社, ticker: 034730.KS, desc: SK集团控股（持有SK海力士等）, themes: [控股, 存储]}
+  - {name: Sunway Construction Group Berhad, cn: 双威建筑, ticker: 5263.KL, desc: 马来西亚建筑（数据中心建设）, themes: [数据中心建设]}
+  - {name: Highwealth Construction Corp., cn: 兴富发, ticker: 2542.TW, desc: 台湾房地产开发, themes: [台湾地产]}
+
+  # —— 金融、消费、娱乐 ——
+  - {name: Nu Holdings Ltd., cn: Nu, ticker: NU, desc: 拉美数字银行, themes: [金融科技]}
+  - {name: Mirae Asset Securities Co., Ltd., cn: 未来资产证券, ticker: 006800.KS, desc: 韩国券商, themes: [韩国金融]}
+  - {name: Meritz Financial Group Inc., cn: Meritz金融, ticker: 138040.KS, desc: 韩国保险与证券, themes: [韩国金融]}
+  - {name: CTBC Financial Holding Co., Ltd., cn: 中信金控, ticker: 2891.TW, desc: 台湾金控, themes: [台湾金融]}
+  - {name: Samyang Foods Co., Ltd., cn: 三养食品, ticker: 003230.KS, desc: 火鸡面出口, themes: [韩国消费]}
+  - {name: HYBE Co., Ltd., cn: HYBE, ticker: 352820.KS, desc: K-pop娱乐公司, themes: [娱乐]}
