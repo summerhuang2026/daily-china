@@ -13,6 +13,7 @@
 #   filings            公司公告来源
 #   website            官网（中文新闻稿）
 #   shares_outstanding 总股本（回购占比用）——首次运行时查好填入，附日期
+#   related            关联公司（可选）：随本公司一起搜索，见 01 的第 4）部分
 
 defaults:
   media_mainland: [财新, 财联社, 证券时报, 21世纪经济报道, 每日经济新闻, 36氪, 新浪财经, 雪球]
@@ -172,4 +173,9 @@ companies:
     media: [media_mainland, media_hk]
     filings: [港交所披露易, 美国SEC]
     website: hesaitech.com
+    related:                               # 关联公司：随本公司一起搜索
+      - name: Sharpa（Sharpa Group）
+        relation: 禾赛三位创始人（向少卿、李一帆、孙恺又）于2026年1月起任董事的通用机器人公司；据报道与禾赛无股权从属，但有工程合作
+        products: [灵巧手SharpaWave, 人形机器人Sharpa North, 触觉灵巧手W02, D01触觉感知机器人, AE01触感数据手套]
+        search_terms: [Sharpa, 灵巧手 SharpaWave, Sharpa North]
     shares_outstanding: "1,261,137,688（A类215,990,888 / B类1,045,146,800，1 ADS = 8 B类股）｜截至2026-09-30｜来源：月报表（搜狐转载）｜待更新"
