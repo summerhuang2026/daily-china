@@ -5,6 +5,7 @@
 - 默认窗口：D-1 07:00 至 D 07:00（北京时间）；默认事件："无特定事件，只要近期新闻"。
 - 读 overrides.yaml：若有 run_date == D 的条目，用它的 window / companies 事件 / only 覆盖默认值。
 - 读 data/companies.yaml、data/portfolio.yaml。
+- 如果 reports/D.md 已经存在：照样完整重跑并覆盖它（手动 Run now 就是要求重跑），不要跳过。
 
 ## 1. 逐家公司（可并行，每家一个子任务）
 中间结果写到 reports/_work/<id>.md（不上传 GitHub）。
