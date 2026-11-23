@@ -1,12 +1,13 @@
 # 每日运行流程（定时任务读取本文件并照做）
 
 ## 0. 确定参数
-- 运行日期 D = 当前北京时间日期。
+- 运行环境可能是 UTC 时区：先用 `TZ=Asia/Shanghai date` 取得北京时间，运行日期 D = 北京时间当天日期。
 - 默认窗口：D-1 07:00 至 D 07:00（北京时间）；默认事件："无特定事件，只要近期新闻"。
 - 读 overrides.yaml：若有 run_date == D 的条目，用它的 window / companies 事件 / only 覆盖默认值。
 - 读 data/companies.yaml、data/portfolio.yaml。
 
 ## 1. 逐家公司（可并行，每家一个子任务）
+中间结果写到 reports/_work/<id>.md（不上传 GitHub）。
 对 companies.yaml 中的每家公司（或 only 指定的公司）：
 1. 用该公司资料和窗口填好 prompts/01_research.md，执行（使用网页搜索），得到新闻条目。
    - media 字段里的 media_mainland / media_hk 展开为 defaults 中的媒体列表。
