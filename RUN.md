@@ -5,7 +5,7 @@
 - 默认窗口：D-1 07:00 至 D 07:00（北京时间）；默认事件："无特定事件，只要近期新闻"。
 - 读 overrides.yaml：若有 run_date == D 的条目，用它的 window / companies 事件 / only 覆盖默认值。
 - 读 data/companies.yaml、data/portfolio.yaml。
-- 如果 reports/D.md 已经存在：照样完整重跑并覆盖它（手动 Run now 就是要求重跑），不要跳过。
+- 报告文件名 F：如果 reports/D.md 不存在，F = reports/D.md；如果已经存在，照样完整重跑（不要跳过），但不要覆盖，F = reports/D_HHMM.md（HHMM = 跑完时的北京时间，如 2026-11-23_1105.md）。旧报告由用户手动清理。
 
 ## 1. 逐家公司（可并行，每家一个子任务）
 中间结果写到 reports/_work/<id>.md（不上传 GitHub）。
@@ -23,7 +23,7 @@
   "### 新闻 N：<标题>（同一事件，详见 <公司> 部分）"，写一句中文摘要和对本股的影响等级，英文同样一句。
 - 不要因此重新搜索或改动原条目的事实。
 
-## 2. 合成一个报告文件：reports/D.md
+## 2. 合成一个报告文件：F（见第 0 节）
 
 ```
 # Greater China Daily — D
@@ -66,5 +66,5 @@
 公司顺序与 companies.yaml 一致。所有公司都写在同一个文件里。
 
 ## 3. 保存
-- git add reports/D.md，commit 信息 "Daily report D"，直接推送到 main 分支。
+- git add F，commit 信息 "Daily report D"（重跑时写 "Daily report D (rerun HHMM)"），直接推送到 main 分支。
 - 若某家公司失败：在报告该公司位置写明失败原因，其他公司照常完成，不要整份放弃。
