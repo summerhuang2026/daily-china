@@ -11,3 +11,7 @@
 | 2026-11-25 | 小米 | 新闻 1：Q3 业绩（营收 -5.2%、经调整净利 -56.8%、汽车分部亏损 34 亿元） | 中 | 发群（经理说重要；标题数字与周二彭博快讯重合，只发了增量部分） | "挺重要的" |
 | 2026-11-25 | 小米 | 新闻 2：业绩会（存储成本 2027 年仍涨、不盲目涨价、无 2027 交付目标） | 中 | 发群（经理说重要） | "挺重要的" |
 | 2026-11-25 | 中微公司 | 半导体设备质量管理体系行业标准发布（北方华创牵头，推荐性） | 低 | 经理定规则：政策/标准类新闻，有实证偏向某些公司才重要，没有实证就不重要（已写入 02_impact.md） | — |
+| 2026-11-26 | 宁德时代 | A+H 大跌、市值跌破万亿（减产报道） | — | 发群（"just paste this"，原样发即可） | "no need to say what your agents are telling you (ie negative etc)…that's your job" |
+| 2026-11-26 | 小米 | 供应链：2027 手机出货目标下调 25%，同行普遍下调 | 中 | 发群（与同事前一天消息部分重合，quote 后只发增量） | "turn into one paragraph and remove impact section - this is interesting, especially mediatek angle" |
+| 2026-11-26 | 其余公司 | 当日其他新闻 | — | 不发 | "要么已知，要么无用" |
+| 2026-11-26 | — | （新要求）中国政策公告：数据中心、硬件、科技、AI、机器人 | — | 已加入 04_policy.md | "focus on policy announcements by CCP. Anything on data centre, hardware, tech, AI, robotics" |
