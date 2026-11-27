@@ -15,3 +15,10 @@
 | 2026-11-26 | 小米 | 供应链：2027 手机出货目标下调 25%，同行普遍下调 | 中 | 发群（与同事前一天消息部分重合，quote 后只发增量） | "turn into one paragraph and remove impact section - this is interesting, especially mediatek angle" |
 | 2026-11-26 | 其余公司 | 当日其他新闻 | — | 不发 | "要么已知，要么无用" |
 | 2026-11-26 | — | （新要求）中国政策公告：数据中心、硬件、科技、AI、机器人 | — | 已加入 04_policy.md | "focus on policy announcements by CCP. Anything on data centre, hardware, tech, AI, robotics" |
+| 2026-11-27 | 信达生物 | 恒瑞 Q3 业绩说明会（对外授权 +31%、GLP-1 多靶点在研） | — | 发群 | 经理："this is interesting"；医药同事："I have been wanting Hengrui in our portfolio for a while" |
+| 2026-11-27 | 政策 | 广东十五五算力规划（2028 年 1000 EFlops、绿电 80%、鼓励国产芯片、算力券） | — | 发群 | 经理：具体到地方政府，可以看看当地 AI 企业；国家层面的政策"太虚了"，不看 |
+| 2026-11-27 | 中际旭创 | A+H 反弹 5–6%、成交额第一（资金回流，无公司新闻） | — | 不发 | "useless market information - maybe interesting...but not investment worthy" |
+| 2026-11-27 | 康方生物 | 依沃西单抗胸腺癌 II 期（19 人） | — | 转医药同事 | 同事："interesting, but very small data pool… still early… just something to keep an eye on" |
+| 2026-11-27 | 中际旭创 | 入股 Liechi Intelligent（301661）IPO 战略配售 + 新易盛 1.6T 放量 | — | 发群（合并成一条） | "both interesting - merge as one" |
+| 2026-11-27 | 中微公司 | 两日跌 13.49%（无公司新闻，资金轮动） | — | 不发 | "useless" |
+| 2026-11-27 | 英矽智能 | 中新社特稿：大厂进军 AI 制药，Phase III 2029 年 | — | 转医药同事 | 同事点赞；"these are interesting to me, because I overlook the biotech and healthcare stocks" |
