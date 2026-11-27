@@ -2,7 +2,8 @@
 # 审核说明：标了「待核实」的字段请重点看。改完后这些资料会被直接填进提示词 01_research.md。
 # 字段：
 #   id                 内部代号（文件名、覆盖文件里用）
-#   group              innovation / epicenter（只做标记，暂不使用）
+#   group              innovation / epicenter / watchlist（watchlist = 不在组合、但团队想关注的公司，照常搜索）
+#   route              （可选）新闻转给谁判断，如 医药同事
 #   cn_name / en_name  中文全称 / 英文名
 #   tickers            所有上市代码；同一家公司多地上市只搜一次
 #   business           主营
@@ -51,6 +52,7 @@ companies:
 
   - id: innovent
     group: innovation
+    route: 医药同事
     cn_name: 信达生物制药
     en_name: Innovent Biologics, Inc.
     tickers: [1801.HK]
@@ -65,6 +67,7 @@ companies:
 
   - id: wuxi_apptec
     group: innovation
+    route: 医药同事
     cn_name: 无锡药明康德新药开发股份有限公司
     en_name: WuXi AppTec Co., Ltd.
     tickers: [2359.HK, 603259.SS]          # A+H，关注清单只列 H 股
@@ -79,6 +82,7 @@ companies:
 
   - id: wuxi_xdc
     group: innovation
+    route: 医药同事
     cn_name: 药明合联生物技术有限公司
     en_name: WuXi XDC Cayman Inc.
     tickers: [2268.HK]
@@ -93,6 +97,7 @@ companies:
 
   - id: akeso
     group: innovation
+    route: 医药同事
     cn_name: 康方生物科技（开曼）有限公司
     en_name: Akeso, Inc.
     tickers: [9926.HK]
@@ -149,6 +154,7 @@ companies:
 
   - id: insilico
     group: epicenter
+    route: 医药同事
     cn_name: 英矽智能
     en_name: InSilico Medicine Cayman TopCo
     tickers: [3696.HK]                     # 2025-12-30 上市
@@ -179,3 +185,18 @@ companies:
         products: [灵巧手SharpaWave, 人形机器人Sharpa North, 触觉灵巧手W02, D01触觉感知机器人, AE01触感数据手套]
         search_terms: [Sharpa, 灵巧手 SharpaWave, Sharpa North]
     shares_outstanding: "1,261,137,688（A类215,990,888 / B类1,045,146,800，1 ADS = 8 B类股）｜截至2026-09-30｜来源：月报表（搜狐转载）｜待更新"
+
+  - id: hengrui
+    group: watchlist                       # 医药同事想放进组合（2026-11-27）
+    route: 医药同事
+    cn_name: 江苏恒瑞医药股份有限公司
+    en_name: Jiangsu Hengrui Pharmaceuticals Co., Ltd.
+    tickers: [600276.SS, 1276.HK]          # 待核实
+    business: 创新药与仿制药（肿瘤、代谢、自免、心血管等），对外授权（license-out）
+    key_new_business: [对外授权交易, GLP-1及多靶点减重/代谢药物, ADC管线, 海外临床]
+    competitors: [百济神州, 信达生物, 翰森制药, 石药集团]
+    confusable: []
+    media: [media_mainland, media_hk]
+    filings: [上交所公告, 港交所披露易]
+    website: hengrui.com
+    shares_outstanding: ""                 # 首次运行时查好填入
