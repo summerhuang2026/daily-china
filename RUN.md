@@ -78,6 +78,6 @@
 政策部分放在所有公司前面；公司顺序与 companies.yaml 一致。所有公司都写在同一个文件里。
 
 ## 3. 保存
-- 更新 reports/README.md（报告目录）：在标题下面第一行插入新报告的链接，最新的永远在最上面，旧的往下排，不要删已有的行。格式：`- [D](D.md)`；重跑写 `- [D（重跑 HH:MM）](D_HHMM.md)`。
-- git add F reports/README.md，commit 信息 "Daily report D"（重跑时写 "Daily report D (rerun HHMM)"），直接推送到 main 分支。
+- 更新根目录的 README.md（报告目录，在仓库首页显示）：在标题下面第一行插入新报告的链接，最新的永远在最上面，旧的往下排，不要删已有的行。格式：`- [D](reports/D.md)`；重跑写 `- [D（重跑 HH:MM）](reports/D_HHMM.md)`。
+- git add F README.md，commit 信息 "Daily report D"（重跑时写 "Daily report D (rerun HHMM)"），直接推送到 main 分支。
 - 若某家公司失败：在报告该公司位置写明失败原因，其他公司照常完成，不要整份放弃。
